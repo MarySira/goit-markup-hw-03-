@@ -39,8 +39,8 @@ button {
   padding-right: 15px;
   margin: 0 auto;
 }
-.header{
-    border:1px solid #EEEEEE;
+.header {
+  border-bottom: 1px solid #eeeeee;
 }
 .logo-header {
   padding-top: 24px;
@@ -54,6 +54,7 @@ button {
   color: var(--title-text-color);
   letter-spacing: 0.03em;
 }
+
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -69,8 +70,7 @@ button {
   display: flex;
 }
 .header-nav {
-  display: flex;
-  align-items: center;
+  padding: 32px 0;
 }
 
 .header-container {
@@ -89,6 +89,7 @@ button {
 }
 .header-contacts {
   margin-left: auto;
+  padding: 32px 0;
 }
 .header-contacts :not(:last-child) {
   margin-right: 50px;
@@ -114,7 +115,7 @@ button {
   display: flex;
 }
 .hero-container {
-  padding: 200px;
+  padding: 200px 0px;
 }
 .features {
   display: flex;
@@ -160,26 +161,26 @@ button {
   line-height: 1, 9;
 }
 .order-button {
-    background-color: var(--accent-color);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.9;
-    color: var(--primary-white-color);
-    letter-spacing: 0.06em;
-    margin: auto;
-    display: block;
-    padding: 10px 32px;
-    border-radius: 4px;
-  }
-  .order-button:active,
-  .order-button:hover,
-  .order-button:focus {
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--primary-white-color);
-  }
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-white-color);
+  letter-spacing: 0.06em;
+  margin: auto;
+  display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+}
+.order-button:active,
+.order-button:hover,
+.order-button:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+}
 .what-we-do-section {
   padding-bottom: 94px;
 }
@@ -247,12 +248,15 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .main-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 94px;
+
   margin-bottom: 50px;
 }
 .filter-btn {
@@ -263,8 +267,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   border-radius: 4px;
 }
 .main-button :not(:last-child) {
@@ -281,6 +284,8 @@ button {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .link.active {
   color: var(--accent-color);
@@ -291,19 +296,19 @@ button {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  margin-bottom: -30px;
 }
-.portfolio :nth-child(3n){
-    margin-right: 0px;
+.portfolio :nth-child(3n) {
+  margin-right: 0px;
 }
-.portfolio-item{
-    margin-right: 30px;
-    margin-bottom: 30px;
+.portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
-.portfolio-info{
-    background-color: var(--primary-white-color);
-    padding:20px 24px;
-    border:1px solid #EEEEEE;
+.portfolio-info {
+  background-color: var(--primary-white-color);
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .portfolio-title {
   color: var(--title-text-color);
@@ -312,14 +317,12 @@ button {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-.portfolio-description {
-}
 .footer {
   background-color: var(--dark-bg-c);
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-container {
-  padding-top: 60px;
 }
 .footer-link-container {
   font-size: 14px;
@@ -332,7 +335,7 @@ button {
 }
 .footer-link {
   font-style: normal;
-  color: var(--primary-white-color) rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 .logo-footer {
   color: var(--primary-white-color);
